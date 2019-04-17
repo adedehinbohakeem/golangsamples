@@ -1,0 +1,15 @@
+package main
+
+import (  
+    "fmt"
+)
+
+func hello() *int {  
+    i := 5
+     fmt.Println("address of i is", &i)
+    return &i
+}
+func main() {  
+    d := hello()
+    fmt.Println("Value of d", d)
+}
